@@ -1,8 +1,13 @@
 Select *
 From Practice_Data.dbo.NashvilleHousingData
 
---Count LandUse types - Which property types are the most sold
+--Edit Column SalesDataConverted to SaleDate
+Use Practice_Data
+Go
+EXEC sp_RENAME 'NashvilleHousingData.SalesDataConverted' , 'SaleDate', 'COLUMN'
 
+--Count LandUse types - Which property types are the most sold
+  
 Select LandUse, count(LandUse) As Total
 From Practice_Data.dbo.NashvilleHousingData
 Group by LandUse
@@ -30,7 +35,7 @@ From Practice_Data.dbo.NashvilleHousingData
 Group by PropertySplitCity, LandUse
 Order by 1, 2 Desc
 
---Sale price by date and city **Edit date colunm name
+--Sale price by date and city 
 --Patterns in pricing across dates according to different cities ex. Time of year when sale prices increase or decrease
 Select SalesDataConverted, PropertySplitCity, SalePrice
 From Practice_Data.dbo.NashvilleHousingData 
@@ -43,7 +48,7 @@ From Practice_Data.dbo.NashvilleHousingData
 Where LandUse = 'Single Family'
 Order by 1, 2 
 
----Average Sale Price by Year built 
+--Average Sale Price by Year built 
 
 Select YearBuilt, Avg(SalePrice) as AverageSalePrice
 From Practice_Data.dbo.NashvilleHousingData 
@@ -53,15 +58,16 @@ Order by 1 Desc
 
 
 
-----LandValue +Building Value (Total Value) vs Price difference to identify where properties sold for less than value or had a good return
+--LandValue +Building Value (Total Value) vs Price difference 
+---to identify where properties sold for less than value or had a good return
 Select UniqueID, LandUse, SalePrice, TotalValue, (SalePrice - TotalValue) as PriceValueDifference
 From Practice_Data.dbo.NashvilleHousingData
 Order by 2, 5 Desc
 
 
----Average PriceValueDifference by Property Type (Temp Table?)
 
----Sold as Vacant vs Not
+
+---Sold as Vacant vs Not Vacant
 Select LandUse, SoldAsVacant, Count(SoldAsVacant)As Total
 From Practice_Data.dbo.NashvilleHousingData
 Group by LandUse, SoldAsVacant
