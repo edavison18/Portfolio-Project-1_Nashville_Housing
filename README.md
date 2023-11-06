@@ -21,9 +21,11 @@ Steps to cleaning data:
 
 # Analyzing the Data
 
-First, I found a spelling error in my Sale Date column so edited column to read correctly to Sale Date. 
+Code at Nashville Housing Analysis Query.sql
 
-Then started by exploring what property types of data were sold in the Nashville area. The top property types were:
+**1.** First, I found a spelling error in my Sale Date column so edited column to read correctly to Sale Date. 
+
+**2.** Then started by exploring what property types of data were sold in the Nashville area. The top property types were:
    Single Family Homes
    Residential Condos
    Vacant Residential Land
@@ -42,6 +44,21 @@ By filtering Single Family Homes, Residential Condos and Condos, I identified re
     Residential Condo 11,601
     Condo 231
 
+This indicates that compared to surrounding areas if you are looking at buying a home there will be more homes available in Nashville and if you are selling there will be more competition because there are more homes for sale. 
+
+**3.** To answer what is the average sale price of a single family home by year (2013-2016) for each city. For the dashboard, I focused on Nashville.
+
+![Average Price per City copy](https://github.com/edavison18/Portfolio-Projects/assets/137111542/bd8c9d1b-ed86-4825-9cd0-40820b815d3f)
+
+There was an increase in the average price from 2013-15 but a decrease in the average home price in 2016. So there would need to be a deeper dive for homes sold in 2016 to see if there were factors that caused a decrease in the average price. It maybe that there were less homes sold in 2016 vs prior years or there were outlyers that screwed the average price for previous years. When doing a quick search, there did not seem to be any housing event in Nashville that would have caused a reduction in the average home price in 2016. So I did a quick drill down for number of single family homes sold each year, and then in 2016 what was the last Sale Date recorded. The number of homes sold increased each year and in 2015 11, 749 homes were sold. However, in 2016 only 9,782 homes were sold. The last Sale Date in 2016 was October 31st, while in 2015 sales were recorded through December. Thus, the drop in average sale price is probably due to only having recorded sales through October. 
+
+**4.** To identify the best time of year to sell or buy, I looked at the average sale price by month. 
+
+![Sale Price by Sold Month](https://github.com/edavison18/Portfolio-Projects/assets/137111542/64e111c9-afb6-4b3f-9d40-87c0d2bed936)
+
+Across 2013-2016, June and August look to be best months to sell to have a higher sale price, while the best time to buy seems to be winter months.
+
+**5.** Finally, I wanted to explore the data on the value difference between the recorded value of the home vs the sale price. The value was found in the data column Total Value which was the addition of the building value and land value. I only looked at Single Family Homes.
 
 
 
