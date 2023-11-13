@@ -60,6 +60,8 @@ Across 2013-2016, June and August look to be best months to sell to have a highe
 
 **5.** Finally, I wanted to explore the data on the value difference between the recorded value of the home vs the sale price. The value was found in the data column Total Value which was the addition of the building value and land value. I only looked at Single Family Homes.
 
+![Sale Price vs Total Property Value by City](https://github.com/edavison18/Portfolio-Project-1_Nashville_Housing/assets/137111542/737a4be1-b6e3-49ec-a568-ed53d693b5b4)
+
 
 
 
