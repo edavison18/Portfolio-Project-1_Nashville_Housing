@@ -3,12 +3,12 @@
 # Portfolio-Projects: Nashville Housing Data Cleaning and Analysis
 
 **Project Objective**
-Clean the data with SQL to be in a more usuable format for analysis. Then explore the data from a realator business perspective to answer the following questions:
+Clean the data with SQL to be in a more usuable format for analysis. Subsequently, investigate the data from a real estate business standpoint to address the following inquiries:
   1. What are the top property types for sale?
-  2. What are most popular cities for residential homes sold?
+  2. What are most popular cities in the Nashville area for residential homes sold?
   3. What is the average Sale Price by City and disaggregate by landuse?
-  4. Sale price by date and city: Patterns in pricing across dates according to different cities ex. Time of year when sale prices increase or decrease.
-  5. Difference in Sale Price vs Value for residential homes - Identify patterns where homes sold for a larger difference in sale price to total property value vs where homes sold for less than the property was valued.
+  4. What is the sale price by date and city: Identify patterns in pricing across dates according to different cities ex. Time of year when sale prices increase or decrease.
+  5. What are the differences in Sale Price vs Value for residential homes - Identify patterns where homes sold for a larger difference in sale price to total property value vs where homes sold for less than the property was valued.
 
 # Cleaning Data
 Steps to cleaning data:
